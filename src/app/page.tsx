@@ -1,3 +1,4 @@
+import Blog from "./components/Home/Blog";
 import Portfolio from "./components/Home/Portfolio";
 import ProfilePage from "./components/Home/ProfilePage";
 import Resume from "./components/Home/Resume";
@@ -10,6 +11,7 @@ export default function Home() {
       <ProfilePage />
       <Resume />
       <Portfolio />
+      <Blog />
     </div>
   );
 }

@@ -19,7 +19,7 @@ const Portfolio = () => {
               <Image
                 src={image}
                 alt="Finance Future"
-                className="w-[332px] h-[321px] mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
+                className="w-[340px] h-[321px] mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
                 width={1000}
                 height={1000}
                 priority
