@@ -1,3 +1,4 @@
+import Portfolio from "./components/Home/Portfolio";
 import ProfilePage from "./components/Home/ProfilePage";
 import Resume from "./components/Home/Resume";
 import Header from "./components/Shared/Header";
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <ProfilePage />
       <Resume />
+      <Portfolio />
     </div>
   );
 }
