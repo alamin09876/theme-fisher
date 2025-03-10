@@ -1,20 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
 import { PiGraduationCap } from "react-icons/pi";
-
-const Resume = () => {
+const WorkHistory = () => {
   const education = [
     {
-      date: "2016-2020",
-      university: "Harvard University",
-      subtitle: "B.A. and M.S., Computer Science",
+      date: "2016-2022",
+      university: "UI/UX design",
+      subtitle: "Web site design",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aa ea commodis neum eligendi lorem. Nipen en meneur erullis, pedo quem quis venim totem voluptae.",
     },
     {
-      date: "2014-2016",
-      university: "Hohana University",
-      subtitle: "Bachelor Degree",
+      date: "2012-2016",
+      university: "Junior Web  designers",
+      subtitle: "Product designer",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aa ea commodis neum eligendi lorem. Nipen en meneur erullis, pedo quem quis venim totem voluptae.",
     },
@@ -38,14 +37,11 @@ const Resume = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div>
-                <h2 className="text-3xl font-extrabold text-white">Resume</h2>
-              </div>
               <div className="text-xl text-white  mb-8 flex gap-2 mt-4">
                 <span className="mt-1">
                   <PiGraduationCap className="text-[#F89222]" />
                 </span>
-                <span>Education</span>
+                <span>Work History</span>
               </div>
 
               <div className="space-y-12">
@@ -92,4 +88,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default WorkHistory;

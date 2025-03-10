@@ -1,7 +1,9 @@
 import Blog from "./components/Home/Blog";
 import Portfolio from "./components/Home/Portfolio";
+import Pricing from "./components/Home/Pricing";
 import ProfilePage from "./components/Home/ProfilePage";
 import Resume from "./components/Home/Resume";
+import WorkHistory from "./components/Home/WorkHistory";
 import Header from "./components/Shared/Header";
 
 export default function Home() {
@@ -10,8 +12,10 @@ export default function Home() {
       <Header />
       <ProfilePage />
       <Resume />
+      <WorkHistory />
       <Portfolio />
       <Blog />
+      <Pricing />
     </div>
   );
 }

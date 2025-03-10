@@ -13,6 +13,11 @@ const Portfolio = () => {
     <div className="m-4 grid lg:grid-cols-12 col-span-1 gap-4">
       <div className="lg:col-span-4 rounded-lg"></div>
       <div className="lg:col-span-8 rounded-lg">
+        <div className="pl-10">
+          <h2 className="text-3xl text-white py-10 font-extrabold">
+            Portfolio
+          </h2>
+        </div>
         <div className="flex justify-center gap-6">
           <div className="flex flex-col gap-6">
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
