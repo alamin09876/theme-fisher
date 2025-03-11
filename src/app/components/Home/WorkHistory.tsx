@@ -1,8 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import { PiGraduationCap } from "react-icons/pi";
+import { FaRegFileAlt } from "react-icons/fa";
+
 const WorkHistory = () => {
-  const education = [
+  const workHistory = [
     {
       date: "2016-2022",
       university: "UI/UX design",
@@ -12,7 +13,7 @@ const WorkHistory = () => {
     },
     {
       date: "2012-2016",
-      university: "Junior Web  designers",
+      university: "Junior Web designers",
       subtitle: "Product designer",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aa ea commodis neum eligendi lorem. Nipen en meneur erullis, pedo quem quis venim totem voluptae.",
@@ -22,7 +23,7 @@ const WorkHistory = () => {
   return (
     <section id="education" className="bg-[#171B1A] dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8  pl-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-4 lg:pl-10">
           <div className="lg:col-span-4" />
 
           <motion.div
@@ -37,15 +38,15 @@ const WorkHistory = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="text-xl text-white  mb-8 flex gap-2 mt-4">
+              <div className="text-xl text-white mb-8 flex gap-2 mt-4 px-4 lg:px-0">
                 <span className="mt-1">
-                  <PiGraduationCap className="text-[#F89222]" />
+                  <FaRegFileAlt className="text-[#F89222]" />
                 </span>
                 <span>Work History</span>
               </div>
 
-              <div className="space-y-12">
-                {education.map((edu, index) => (
+              <div className="space-y-12 px-4 lg:px-0">
+                {workHistory.map((edu, index) => (
                   <motion.div
                     key={index}
                     className="relative pl-8"
@@ -62,18 +63,18 @@ const WorkHistory = () => {
 
                     <div className="absolute left-[-2px] top-0 w-2 h-2 bg-[#646464]" />
 
-                    <p className="text-white text-sm w-[100px] mb-2 border rounded text-center p-2 bg-black">
+                    <p className="text-white text-sm w-fit mb-2 border rounded text-center p-2 bg-black">
                       {edu.date}
                     </p>
-                    <div className=" text-white text-sm w-full mb-2 border rounded p-4 bg-black">
-                      <h3 className="text-sm text-[#F89222] mb-1">
+                    <div className="text-white text-sm w-full mb-2 border rounded p-4 bg-black">
+                      <h3 className="text-xs lg:text-sm text-[#F89222] mb-1">
                         {edu.university}
                       </h3>
-                      <p className="text-gray-300 text-sm mb-3">
+                      <p className="text-gray-300 text-xs lg:text-sm mb-3">
                         {edu.subtitle}
                       </p>
                       <hr className="my-4" />
-                      <p className="text-gray-400 leading-relaxed">
+                      <p className="text-gray-400 leading-relaxed text-xs lg:text-sm">
                         {edu.description}
                       </p>
                     </div>

@@ -1,24 +1,37 @@
 const Pricing = () => {
+  // Define crossed features for each plan
+  const crossedFeatures = {
+    Intro: ["Interface Design", "Front-end Code", "Back-end Development"],
+    Base: ["Search Engine Optimization", "Awesome Support"],
+    Popular: ["Easy in use", "Useful site"],
+  };
+
+  const getLineThrough = (plan: string, feature: string) => {
+    if (plan === "Enterprise") return false; // Handled separately
+    const features = crossedFeatures[plan] || [];
+    return features.includes(feature);
+  };
+
   return (
-    <div className="m-4 grid lg:grid-cols-12 col-span-1  gap-4">
-      <div className="lg:col-span-4 "></div>
+    <div className="mx-0 my-4 lg:m-4 grid lg:grid-cols-12 col-span-1 gap-4">
+      <div className="lg:col-span-4"></div>
 
       <div className="lg:col-span-8 col-span-1">
-        <div className="pl-10">
-          <h2 className="text-3xl text-white py-10 font-extrabold">Prising</h2>
+        <div className="px-4 lg:pl-10">
+          <h2 className="text-3xl text-white py-10 font-extrabold">Pricing</h2>
         </div>
-        <div className="grid grid-cols-12 gap-4 px-11">
-          <div className="lg:col-span-6 bg-black ">
-            <h2 className="text-2xl text-white border border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-gray-600">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 px-4 lg:px-11">
+          {/* Intro Plan */}
+          <div className="lg:col-span-6 bg-black w-full">
+            <h2 className="text-2xl text-white  border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-[#4A2F0E]">
               Intro
             </h2>
-            <div className="max-w-md mx-auto bg-black p-8">
-              <h2 className="text-4xl font-bold  text-white mb-8">
+            <div className="w-full mx-auto bg-black p-4 lg:p-8">
+              <h2 className="text-4xl font-bold text-white mb-8">
                 $29
                 <span className="text-lg font-normal text-white">/month</span>
               </h2>
-
-              <ul className="grid gap-4 mb-10 bg-gray-600 text-white p-7">
+              <ul className="grid gap-4 mb-10 bg-[#121414] text-white p-4 lg:p-7">
                 {[
                   "Interface Design",
                   "Front-end Code",
@@ -30,29 +43,35 @@ const Pricing = () => {
                   "Useful site",
                   "Speedy web",
                 ].map((feature) => (
-                  <li key={feature} className="text-white">
+                  <li
+                    key={feature}
+                    className={`text-white ${
+                      getLineThrough("Intro", feature)
+                        ? "line-through opacity-50"
+                        : ""
+                    }`}
+                  >
                     {feature}
                   </li>
                 ))}
               </ul>
-
-              <button className="w-[150px] py-4 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="w-full lg:w-[150px] border border-[#F89222] py-4 px-6 hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222]  text-white rounded-lg font-semibold transition-colors">
                 Get Started
               </button>
             </div>
           </div>
 
-          <div className="lg:col-span-6 bg-black ">
-            <h2 className="text-2xl text-white border border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-gray-600">
+          {/* Base Plan */}
+          <div className="lg:col-span-6 bg-black w-full">
+            <h2 className="text-2xl text-white border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-[#4A2F0E]">
               Base
             </h2>
-            <div className="max-w-md mx-auto bg-black p-8">
-              <h2 className="text-4xl font-bold  text-white mb-8">
+            <div className="w-full mx-auto bg-black p-4 lg:p-8">
+              <h2 className="text-4xl font-bold text-white mb-8">
                 $49
                 <span className="text-lg font-normal text-white">/month</span>
               </h2>
-
-              <ul className="grid gap-4 mb-10 bg-gray-600 text-white p-7">
+              <ul className="grid gap-4 mb-10 bg-[#121414] text-white p-4 lg:p-7">
                 {[
                   "Interface Design",
                   "Front-end Code",
@@ -64,28 +83,35 @@ const Pricing = () => {
                   "Useful site",
                   "Speedy web",
                 ].map((feature) => (
-                  <li key={feature} className="text-white">
+                  <li
+                    key={feature}
+                    className={`text-white ${
+                      getLineThrough("Base", feature)
+                        ? "line-through opacity-50"
+                        : ""
+                    }`}
+                  >
                     {feature}
                   </li>
                 ))}
               </ul>
-
-              <button className="w-[150px] py-4 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="w-full lg:w-[150px] border border-[#F89222] py-4 px-6 hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222]  text-white rounded-lg font-semibold transition-colors">
                 Get Started
               </button>
             </div>
           </div>
-          <div className="lg:col-span-6 bg-black ">
-            <h2 className="text-2xl text-white border border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-gray-600">
+
+          {/* Popular Plan */}
+          <div className="lg:col-span-6 bg-black w-full">
+            <h2 className="text-2xl text-white  border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-[#4A2F0E] ">
               Popular
             </h2>
-            <div className="max-w-md mx-auto bg-black p-8">
-              <h2 className="text-4xl font-bold  text-white mb-8">
+            <div className="w-full mx-auto bg-black p-4 lg:p-8">
+              <h2 className="text-4xl font-bold text-white mb-8">
                 $99
                 <span className="text-lg font-normal text-white">/month</span>
               </h2>
-
-              <ul className="grid gap-4 mb-10 bg-gray-600 text-white p-7">
+              <ul className="grid gap-4 mb-10 bg-[#121414] text-white p-4 lg:p-7">
                 {[
                   "Interface Design",
                   "Front-end Code",
@@ -97,28 +123,35 @@ const Pricing = () => {
                   "Useful site",
                   "Speedy web",
                 ].map((feature) => (
-                  <li key={feature} className="text-white">
+                  <li
+                    key={feature}
+                    className={`text-white ${
+                      getLineThrough("Popular", feature)
+                        ? "line-through opacity-50"
+                        : ""
+                    }`}
+                  >
                     {feature}
                   </li>
                 ))}
               </ul>
-
-              <button className="w-[150px] py-4 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="w-full lg:w-[150px] border border-[#F89222] py-4 px-6 hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222]  text-white rounded-lg font-semibold transition-colors">
                 Get Started
               </button>
             </div>
           </div>
-          <div className="lg:col-span-6 bg-black ">
-            <h2 className="text-2xl text-white border border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-gray-600">
+
+          {/* Enterprise Plan */}
+          <div className="lg:col-span-6 bg-black w-full">
+            <h2 className="text-2xl text-white border-l-0 rounded-r-4xl w-[130px] p-2 mt-10 bg-[#4A2F0E]">
               Enterprise
             </h2>
-            <div className="max-w-md mx-auto bg-black p-8">
-              <h2 className="text-4xl font-bold  text-white mb-8">
+            <div className="w-full mx-auto bg-black p-4 lg:p-8">
+              <h2 className="text-4xl font-bold text-white mb-8">
                 $129
                 <span className="text-lg font-normal text-white">/month</span>
               </h2>
-
-              <ul className="grid gap-4 mb-10 bg-gray-600 text-white p-7 ">
+              <ul className="grid gap-4 mb-10 bg-[#121414] text-white p-4 lg:p-7">
                 {[
                   "Interface Design",
                   "Front-end Code",
@@ -130,13 +163,12 @@ const Pricing = () => {
                   "Useful site",
                   "Speedy web",
                 ].map((feature) => (
-                  <li key={feature} className="text-white line-through">
+                  <li key={feature} className="text-white  opacity-50">
                     {feature}
                   </li>
                 ))}
               </ul>
-
-              <button className="w-[150px] py-4 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="w-full lg:w-[150px] border border-[#F89222] py-4 px-6 hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222]  text-white rounded-lg font-semibold transition-colors">
                 Get Started
               </button>
             </div>
