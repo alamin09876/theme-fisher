@@ -39,7 +39,7 @@ const Blog = () => {
                   <br /> Lorem Ipsum has been...
                 </p>
                 <p className="text-white text-sm font-semibold mt-4">
-                  Posted By Daryl Smith
+                  -- Posted By Daryl Smith --
                 </p>
               </div>
             </div>

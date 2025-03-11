@@ -118,7 +118,7 @@ const Pricing = () => {
                 <span className="text-lg font-normal text-white">/month</span>
               </h2>
 
-              <ul className="grid gap-4 mb-10 bg-gray-600 text-white p-7">
+              <ul className="grid gap-4 mb-10 bg-gray-600 text-white p-7 ">
                 {[
                   "Interface Design",
                   "Front-end Code",
@@ -130,7 +130,7 @@ const Pricing = () => {
                   "Useful site",
                   "Speedy web",
                 ].map((feature) => (
-                  <li key={feature} className="text-white">
+                  <li key={feature} className="text-white line-through">
                     {feature}
                   </li>
                 ))}
