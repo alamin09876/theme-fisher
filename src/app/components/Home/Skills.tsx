@@ -10,7 +10,6 @@ const Skills = () => {
           <p>Skills</p>
         </div>
 
-        {/* UI/UX Design */}
         <div className="px-4 lg:px-0">
           <div className="text-white mb-3 flex justify-between w-full lg:w-[685px]">
             <p>UI/UX Design</p>
@@ -31,7 +30,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Photography */}
         <div className="px-4 lg:px-0 mt-6">
           <div className="text-white mb-3 flex justify-between w-full lg:w-[685px]">
             <p>Photography</p>
@@ -52,7 +50,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Creativity */}
         <div className="px-4 lg:px-0 mt-6">
           <div className="text-white mb-3 flex justify-between w-full lg:w-[685px]">
             <p>Creativity</p>
@@ -73,7 +70,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Team Work */}
         <div className="px-4 lg:px-0 mt-6">
           <div className="text-white mb-3 flex justify-between w-full lg:w-[685px]">
             <p>Team Work</p>
@@ -94,7 +90,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Web Design */}
         <div className="px-4 lg:px-0 mt-6">
           <div className="text-white mb-3 flex justify-between w-full lg:w-[685px]">
             <p>Web Design</p>

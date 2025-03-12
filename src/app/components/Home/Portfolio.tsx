@@ -10,7 +10,6 @@ import imageSix from "../../../../public/assest/portfolio/Rectangle 12665.png";
 import imageSeven from "../../../../public/assest/portfolio/Rectangle 12666.png";
 import imageTwo from "../../../../public/assest/portfolio/Rectangle 12667.png";
 import imageThree from "../../../../public/assest/portfolio/Rectangle 12668.png";
-// ... keep other image imports the same ...
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("All");
@@ -31,9 +30,7 @@ const Portfolio = () => {
             Portfolio
           </h2>
 
-          {/* Mapped Categories */}
           <div className="space-y-4 md:space-y-0 mb-8">
-            {/* Mobile: Two rows */}
             <div className="md:hidden flex flex-col gap-4">
               <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
                 {categories.slice(0, 3).map((category) => (
@@ -67,7 +64,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Desktop: Single row */}
             <div className="hidden md:flex items-center gap-6 overflow-x-auto pb-2 scrollbar-hide">
               {categories.map((category) => (
                 <button
@@ -86,11 +82,8 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Static Image Blocks */}
         <div className="flex flex-col lg:flex-row justify-center gap-6">
-          {/* Left Column */}
           <div className="flex flex-col gap-6">
-            {/* Finance Future */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={image}
@@ -116,7 +109,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Investment Growth */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageOne}
@@ -140,10 +132,8 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
 
-            {/* Market Analysis */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageTwo}
@@ -167,10 +157,8 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
 
-            {/* Stock Trends */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageThree}
@@ -194,13 +182,10 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
           </div>
 
-          {/* Right Column */}
           <div className="flex flex-col gap-6">
-            {/* Crypto Insights */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageFour}
@@ -224,10 +209,8 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
 
-            {/* Economic Outlook */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageFive}
@@ -251,10 +234,8 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
 
-            {/* Trading Strategies */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageSix}
@@ -278,10 +259,8 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
 
-            {/* Business Forecast */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
                 src={imageSeven}
@@ -305,7 +284,6 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
             <div className="relative group overflow-hidden rounded-lg shadow-lg w-full">
               <Image
@@ -330,7 +308,6 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              {/* ... same hover effect structure ... */}
             </div>
           </div>
         </div>

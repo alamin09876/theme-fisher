@@ -16,7 +16,6 @@ const Blog = () => {
         </div>
         <div className="flex flex-col lg:flex-row justify-center gap-6 px-4 lg:px-0">
           <div className="flex flex-col gap-6 w-full lg:w-auto">
-            {/* First Column */}
             <div className="group overflow-hidden shadow-lg mb-10 w-full">
               <Image
                 src={image}
@@ -103,7 +102,6 @@ const Blog = () => {
           </div>
 
           <div className="flex flex-col gap-6 w-full lg:w-auto">
-            {/* Second Column */}
             <div className="group overflow-hidden shadow-lg mb-10 w-full">
               <Image
                 src={imageThree}

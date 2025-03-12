@@ -55,7 +55,6 @@ const WorkHistory = () => {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    {/* Tight Double Border */}
                     <div className="absolute left-0 top-0 h-full flex">
                       <div className="w-px bg-[#646464]" />
                       <div className="w-px bg-[#646464] ml-[1px]" />

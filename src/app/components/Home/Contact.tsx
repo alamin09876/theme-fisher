@@ -32,16 +32,14 @@ export default function Contact() {
         <div className=" flex  ">
           <div className="max-w-3xl w-full mx-auto ">
             <form onSubmit={handleSubmit}>
-              {/* Two-Column Layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Column 1: First & Last Name */}
                 <div className="space-y-6">
                   <div className="relative">
                     <label className="block text-sm font-semibold text-white mb-2">
                       First Name<span className="text-white">*</span>
                     </label>
                     <div
-                      className="w-full rounded-md transition-all duration-200 
+                      className="w-full rounded-md transition-all duration-200 text-white
               focus-within:bg-gradient-to-r focus-within:from-[#F5BD4D] focus-within:to-[#F89222] p-[2px]"
                     >
                       <input
@@ -60,7 +58,7 @@ export default function Contact() {
                       Email<span className="text-white">*</span>
                     </label>
                     <div
-                      className="w-full rounded-md transition-all duration-200 
+                      className="w-full rounded-md transition-all duration-200 text-white
               focus-within:bg-gradient-to-r focus-within:from-[#F5BD4D] focus-within:to-[#F89222] p-[2px]"
                     >
                       <input
@@ -76,14 +74,13 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Column 2: Email & Phone */}
                 <div className="space-y-6">
                   <div className="relative">
                     <label className="block text-sm font-semibold text-white mb-2">
                       Last Name<span className="text-white">*</span>
                     </label>
                     <div
-                      className="w-full rounded-md transition-all duration-200 
+                      className="w-full rounded-md transition-all duration-200 text-white
               focus-within:bg-gradient-to-r focus-within:from-[#F5BD4D] focus-within:to-[#F89222] p-[2px]"
                     >
                       <input
@@ -102,7 +99,7 @@ export default function Contact() {
                       Phone<span className="text-white">*</span>
                     </label>
                     <div
-                      className="w-full rounded-md transition-all duration-200 
+                      className="w-full rounded-md transition-all duration-200 text-white
               focus-within:bg-gradient-to-r focus-within:from-[#F5BD4D] focus-within:to-[#F89222] p-[2px]"
                     >
                       <input
@@ -119,13 +116,12 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Full-Width Message Input */}
               <div className="relative mt-6">
                 <label className="block text-sm font-semibold text-white mb-2">
                   Message<span className="text-white">*</span>
                 </label>
                 <div
-                  className="w-full rounded-md transition-all duration-200 
+                  className="w-full rounded-md transition-all duration-200 text-white
           focus-within:bg-gradient-to-r focus-within:from-[#F5BD4D] focus-within:to-[#F89222] p-[2px] mb-10"
                 >
                   <textarea
@@ -140,7 +136,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-[#F5BD4D] to-[#F89222] 

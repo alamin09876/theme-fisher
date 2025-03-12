@@ -43,7 +43,6 @@ const Header = () => {
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
               <Link href="/services" className="text-white">
                 <div className="flex gap-2 items-center">
@@ -55,7 +54,6 @@ const Header = () => {
               </Link>
             </nav>
 
-            {/* Desktop Contact Button */}
             <div className="hidden md:block">
               <Link
                 href="/contact"
@@ -65,7 +63,6 @@ const Header = () => {
               </Link>
             </div>
 
-            {/* Mobile Hamburger Menu */}
             <button
               className="md:hidden text-white z-50"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -78,10 +75,8 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden absolute top-20 left-0 right-0 bg-black py-4 px-4 space-y-6">
-              {/* Home Component */}
               <div className="border-b border-gray-700 pb-4">
                 <Link
                   href="/services"
@@ -92,7 +87,6 @@ const Header = () => {
                 </Link>
               </div>
 
-              {/* Contact Button */}
               <div className="flex justify-center">
                 <Link
                   href="/contact"

@@ -22,7 +22,6 @@ const iconMotion = {
 const ProfilePage = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 col-span-1 pt-10 lg:pt-20">
-      {/* Left Sidebar - Hidden on mobile */}
       <div className="hidden lg:block lg:col-span-1">
         <div
           className="min-h-screen bg-center bg-no-repeat bg-cover"
@@ -51,7 +50,6 @@ const ProfilePage = () => {
         </div>
       </div>
 
-      {/* Profile Picture Section */}
       <div className="lg:col-span-3 px-4 lg:px-0">
         <Image
           src={"/assest/picture/Mask group.png"}
@@ -61,7 +59,7 @@ const ProfilePage = () => {
           height={450}
           priority
         />
-        {/* Social Icons */}
+
         <div className="flex flex-wrap justify-center gap-2 lg:justify-between bg-black px-4 lg:px-8 py-4 text-white">
           {[
             SlSocialFacebook,
@@ -82,7 +80,6 @@ const ProfilePage = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="lg:col-span-7 px-4 lg:ml-6 lg:px-0">
         <div className="text-center lg:text-left">
           <span className="text-sm font-semibold text-[#F89222]">
@@ -119,7 +116,6 @@ const ProfilePage = () => {
         </div>
       </div>
 
-      {/* Right Sidebar - Hidden on mobile */}
       <div className="hidden lg:block lg:col-span-1">
         <div
           className="min-h-screen bg-center bg-no-repeat bg-cover"
