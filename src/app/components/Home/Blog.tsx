@@ -12,7 +12,9 @@ const Blog = () => {
       <div className="lg:col-span-4 rounded-lg"></div>
       <div className="lg:col-span-8 rounded-lg">
         <div className="px-4 lg:pl-10">
-          <h2 className="text-3xl text-white py-10 font-extrabold">Blog</h2>
+          <h2 className="text-3xl text-white py-10 font-extrabold mt-8">
+            Blog
+          </h2>
         </div>
         <div className="flex flex-col lg:flex-row justify-center gap-6 px-4 lg:px-0">
           <div className="flex flex-col gap-6 w-full lg:w-auto">
@@ -38,9 +40,11 @@ const Blog = () => {
                   typesetting industry.
                   <br /> Lorem Ipsum has been...
                 </p>
-                <p className="text-white text-sm font-semibold mt-4">
-                  -- Posted By Daryl Smith --
-                </p>
+                <div className="flex items-center text-sm text-white mt-4 mb-3">
+                  <span className="text-[#F5BD4D]">—</span>
+                  <span className="mx-2 relative">Posted By Daryl Smith</span>
+                  <span className="text-[#F5BD4D]">—</span>
+                </div>
               </div>
             </div>
 
@@ -66,9 +70,11 @@ const Blog = () => {
                   typesetting industry.
                   <br /> Lorem Ipsum has been...
                 </p>
-                <p className="text-white text-sm font-semibold mt-4">
-                  Posted By Daryl Smith
-                </p>
+                <div className="flex items-center text-sm text-white mt-4 mb-3">
+                  <span className="text-[#F5BD4D]">—</span>
+                  <span className="mx-2 relative">Posted By Daryl Smith</span>
+                  <span className="text-[#F5BD4D]">—</span>
+                </div>
               </div>
             </div>
 
@@ -94,9 +100,11 @@ const Blog = () => {
                   typesetting industry.
                   <br /> Lorem Ipsum has been...
                 </p>
-                <p className="text-white text-sm font-semibold mt-4">
-                  Posted By Daryl Smith
-                </p>
+                <div className="flex items-center text-sm text-white mt-4 mb-3">
+                  <span className="text-[#F5BD4D]">—</span>
+                  <span className="mx-2 relative">Posted By Daryl Smith</span>
+                  <span className="text-[#F5BD4D]">—</span>
+                </div>
               </div>
             </div>
           </div>
@@ -124,9 +132,11 @@ const Blog = () => {
                   typesetting industry.
                   <br /> Lorem Ipsum has been...
                 </p>
-                <p className="text-white text-sm font-semibold mt-4">
-                  Posted By Daryl Smith
-                </p>
+                <div className="flex items-center text-sm text-white mt-4 mb-3">
+                  <span className="text-[#F5BD4D]">—</span>
+                  <span className="mx-2 relative">Posted By Daryl Smith</span>
+                  <span className="text-[#F5BD4D]">—</span>
+                </div>
               </div>
             </div>
 
@@ -152,9 +162,11 @@ const Blog = () => {
                   typesetting industry.
                   <br /> Lorem Ipsum has been...
                 </p>
-                <p className="text-white text-sm font-semibold mt-4">
-                  Posted By Daryl Smith
-                </p>
+                <div className="flex items-center text-sm text-white mt-4 mb-3">
+                  <span className="text-[#F5BD4D]">—</span>
+                  <span className="mx-2 relative">Posted By Daryl Smith</span>
+                  <span className="text-[#F5BD4D]">—</span>
+                </div>
               </div>
             </div>
 
@@ -180,9 +192,11 @@ const Blog = () => {
                   typesetting industry.
                   <br /> Lorem Ipsum has been...
                 </p>
-                <p className="text-white text-sm font-semibold mt-4">
-                  Posted By Daryl Smith
-                </p>
+                <div className="flex items-center text-sm text-white mt-4 mb-3">
+                  <span className="text-[#F5BD4D]">—</span>
+                  <span className="mx-2 relative">Posted By Daryl Smith</span>
+                  <span className="text-[#F5BD4D]">—</span>
+                </div>
               </div>
             </div>
           </div>

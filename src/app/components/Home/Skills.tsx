@@ -6,7 +6,7 @@ const Skills = () => {
     <div className="mx-0 my-4 lg:m-4 grid lg:grid-cols-12 col-span-1 gap-4">
       <div className="lg:col-span-4"></div>
       <div className="lg:col-span-8 lg:pl-10 p-0">
-        <div className="text-white mb-3 text-3xl px-4 lg:px-0">
+        <div className="text-white text-3xl px-4 lg:px-0 mt-12 font-extrabold">
           <p>Skills</p>
         </div>
 

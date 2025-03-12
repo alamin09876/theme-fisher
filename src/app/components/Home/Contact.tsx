@@ -26,8 +26,8 @@ export default function Contact() {
     <div className="m-4 grid lg:grid-cols-12 col-span-1  gap-4">
       <div className="lg:col-span-4 "></div>
       <div className="lg:col-span-8 ">
-        <div className="text-white mb-3 text-3xl pl-10">
-          <p>Skills</p>
+        <div className="text-white font-extrabold  text-3xl lg:pl-10 pl-1 mt-12 mb-10">
+          <p>Contact</p>
         </div>
         <div className=" flex  ">
           <div className="max-w-3xl w-full mx-auto ">

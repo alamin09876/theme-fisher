@@ -39,7 +39,7 @@ const Resume = () => {
               viewport={{ once: true }}
             >
               <div className="px-4 lg:px-0">
-                <h2 className="text-3xl font-extrabold text-white">Resume</h2>
+                <h2 className="text-3xl font-extrabold text-white ">Resume</h2>
               </div>
               <div className="text-xl text-white mb-8 flex gap-2 mt-4 px-4 lg:px-0">
                 <span className="mt-1">

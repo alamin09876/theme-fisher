@@ -29,10 +29,9 @@ const Portfolio = () => {
           <h2 className="text-3xl text-white py-10 font-extrabold">
             Portfolio
           </h2>
-
-          <div className="space-y-4 md:space-y-0 mb-8">
-            <div className="md:hidden flex flex-col gap-4">
-              <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+          <div className="bg-black space-y-4 md:space-y-0 mb-4 p-6 mr-6 rounded">
+            <div className="md:hidden flex flex-col gap-4 ">
+              <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide ">
                 {categories.slice(0, 3).map((category) => (
                   <button
                     key={category}
@@ -40,14 +39,14 @@ const Portfolio = () => {
                     className={`text-sm whitespace-nowrap px-3 py-1 ${
                       activeTab === category
                         ? "text-[#F89222] font-semibold border-b-[3px] border-[#F89222]"
-                        : "text-gray-400 hover:text-gray-300 transition-colors"
+                        : "text-white hover:text-gray-300 transition-colors "
                     }`}
                   >
                     {category}
                   </button>
                 ))}
               </div>
-              <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+              <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide bg-black">
                 {categories.slice(3).map((category) => (
                   <button
                     key={category}
@@ -55,7 +54,7 @@ const Portfolio = () => {
                     className={`text-sm whitespace-nowrap px-3 py-1 ${
                       activeTab === category
                         ? "text-[#F89222] font-semibold border-b-[3px] border-[#F89222]"
-                        : "text-gray-400 hover:text-gray-300 transition-colors"
+                        : "text-white hover:text-gray-300 transition-colors"
                     }`}
                   >
                     {category}
@@ -63,8 +62,7 @@ const Portfolio = () => {
                 ))}
               </div>
             </div>
-
-            <div className="hidden md:flex items-center gap-6 overflow-x-auto pb-2 scrollbar-hide">
+            <div className="hidden md:flex items-center gap-16 overflow-x-auto pb-2 scrollbar-hide">
               {categories.map((category) => (
                 <button
                   key={category}
@@ -72,7 +70,7 @@ const Portfolio = () => {
                   className={`text-lg whitespace-nowrap ${
                     activeTab === category
                       ? "text-[#F89222] font-semibold border-b-2 border-[#F89222]"
-                      : "text-gray-400 hover:text-gray-300 transition-colors"
+                      : "text-white hover:text-gray-300 transition-colors"
                   }`}
                 >
                   {category}
